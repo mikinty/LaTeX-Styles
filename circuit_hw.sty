@@ -21,9 +21,17 @@
 \graphicspath{{images/}}
 
 %%%%%%%%%%%%%%%%%%% HEADERS CHANGE FOR EACH PROJECT %%%%%%%%%%%%%%%%%%%
+\def\AUTHOR{AUTHOR}
+\def\TITLE{TITLE}
+
+\author{\AUTHOR}
+\title{\TITLE}
+\date{}
+
+%% Fancy headers at top of each page
 \fancyhf{}
-\lhead{DOCUMENT TITLE}
-\rhead{AUTHOR NAME}
+\lhead{\TITLE}
+\rhead{\AUTHOR}
 \fancyfoot[C]{\thepage}
 
 %%%%%%%%%%%%%%%%%%% Custom math shortcuts %%%%%%%%%%%%%%%%%%%
@@ -56,9 +64,13 @@
 
 %% Large signal
 \newcommand{\VIN}{V_\text{IN}}
-\newcommand{\VI}{V_\text{i}}
+\newcommand{\Vin}{V_\text{in}}
+\newcommand{\VI}{V_\text{I}}
+\newcommand{\Vi}{V_\text{in}}
 \newcommand{\VOUT}{V_\text{OUT}}
-\newcommand{\VO}{V_\text{o}}
+\newcommand{\Vout}{V_\text{out}}
+\newcommand{\VO}{V_\text{O}}
+\newcommand{\Vo}{V_\text{o}}
 \newcommand{\VSS}{V_\text{SS}}
 \newcommand{\VDD}{V_\text{DD}}
 \newcommand{\IIN}{I_\text{IN}}
@@ -73,10 +85,12 @@
 
 \newcommand{\VBIAS}{V_\text{BIAS}}
 \newcommand{\VOV}{V_\text{OV}}
+\newcommand{\VDC}{V_\text{DC}}
 \newcommand{\VGSDC}{V_\text{GSDC}}
 \newcommand{\VDSDC}{V_\text{DSDC}}
 \newcommand{\ID}{I_\text{D}}
 \newcommand{\IDS}{I_\text{DS}}
+\newcommand{\IS}{I_\text{S}}
 
 % Small signal
 \newcommand{\vi}{v_\text{i}}
@@ -109,6 +123,7 @@
 \newcommand{\REQ}{R_\text{eq}}
 \newcommand{\IEQ}{I_\text{eq}}
 \newcommand{\VOC}{V_\text{OC}}
+\newcommand{\VT}{V_\text{T}}
 \newcommand{\ISC}{I_\text{SC}}
 
 % SIUNITX
