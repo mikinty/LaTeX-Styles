@@ -30,11 +30,10 @@
 
 \graphicspath{{images/}}
 
-%math mode cells
+% Math mode cells
 \newcolumntype{C}{>{$}c<{$}} %
 
-%custom math shortcuts
-\DeclareMathOperator{\Var}{Var}
+% Delimiter brackets
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 \DeclarePairedDelimiter{\paren}{(}{)}
@@ -47,11 +46,18 @@
 \newcommand{\db}[1]{\llbracket{#1}\rrbracket}
 \newcommand{\bangle}[1]{\left\langle #1 \right\rangle}
 \newcommand{\banglee}[1]{\langle #1 \rangle}
-\newcommand{\mb}[1]{\mathbf{#1}}
 
-%custom symbols
+% Shortcuts
+\DeclareMathOperator{\Var}{Var}
+\newcommand{\te}[1]{\texttt{#1}} %for programming font
+\newcommand{\mb}[1]{\mathbf{#1}}
+\newcommand{\tat}{{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}} % tilde
+\newcommand{\tac}{\textasciicircum} % XOR
+\newcommand{\drl}{\Longleftrightarrow} % ==>
+\newcommand{\lra}{\Longrightarrow} % ==>
+
+% Custom symbols
 \def\checkmark{{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}\hspace{0.1in}} 
-\newclass{\VNL}{VNL}
 
 %%% HEADERS %%%
 \fancyhf{}
@@ -73,19 +79,9 @@
 \newtheorem{claim}{Claim}
 \newtheorem{claimproof}{Claim Proof}
 
-%shortcuts for ^, ~, and programming font
-\newcommand{\tat}{{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}} %tilde
-\newcommand{\tac}{\textasciicircum} %XOR
-\newcommand{\te}[1]{\texttt{#1}} %for programming font
-\newcommand{\drl}{\Longleftrightarrow} % ==>
-\newcommand{\lra}{\Longrightarrow} % ==>
-
 % env shortcuts
 \newcommand{\bx}[1]{\begin{example} #1 \end{example}}
 \newcommand{\bd}[1]{\begin{definition} #1 \end{definition}}
-\newclass{\HP}{HP}
-\newcommand{\dL}{\sf{dL}}
-\newcommand{\MINCUT}{\textsf{MIN-CUT} }
 
 %%%%%%%%%%%%%%%%%%% CODE ENV %%%%%%%%%%%%%%%%%%%
 \RequirePackage{listings, lstautogobble}
